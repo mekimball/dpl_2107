@@ -19,7 +19,7 @@ class Author
                      author_last_name: @last_name,
                      title: title,
                      publication_date: publication_date}
-    book_name = title.gsub(/ /, '_').downcase
-    book_name = Book.new(data)
+    @books.push(Book.new(data))
+    Book.new(data)
   end
 end
